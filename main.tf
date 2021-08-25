@@ -7,9 +7,7 @@ terraform {
     random = {
       source = "hashicorp/random"
     }
-    provider "aws" {
-       region         = "us-east-1"
-    }
+    
   }
 
   backend "remote" {
@@ -20,6 +18,10 @@ terraform {
       name = "gh-actions-demo"
     }
   }
+}
+
+provider "aws" {
+       region         = "us-east-1"
 }
 
 resource "aws_instance" "myec2" {
