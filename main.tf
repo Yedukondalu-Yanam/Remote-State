@@ -4,9 +4,9 @@ terraform {
       source = "hashicorp/aws"
      
     }
-    random = {
-      source = "hashicorp/random"
-    }
+    #random = {
+    #  source = "hashicorp/random"
+    #}
     
   }
 
